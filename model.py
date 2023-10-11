@@ -337,16 +337,16 @@ if check_password():
         "selected_options": []
     }
 
-    # Create a multiselect widget
-    selected_options = st.sidebar.multiselect(
-        'Select the id of each group member ➡️',
-        student_ids,
-        max_selections=3,
-        default=session_state["selected_options"]
-    )
+    # # Create a multiselect widget
+    # selected_options = st.sidebar.multiselect(
+    #     'Select the id of each group member ➡️',
+    #     student_ids,
+    #     max_selections=3,
+    #     default=session_state["selected_options"]
+    # )
 
     # Update the session state list when the user changes the selection
-    session_state["selected_options"] = selected_options
+    session_state["selected_options"] = ["",""]
     select_group = "-".join([str(elem) for elem in session_state["selected_options"]])
 
     #st.sidebar.button("My student id isn't in the list")
