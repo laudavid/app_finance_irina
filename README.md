@@ -1,1 +1,1 @@
-# app_finance_irina
+# finance-hec
