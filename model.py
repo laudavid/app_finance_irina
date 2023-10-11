@@ -319,13 +319,15 @@ if check_password():
 
 
     ############# SELECT TEACHER  ###############
-    list_teachers = ["François Derien","Irina Zviadadze","Mian Liu","Teodor Duevski","Quirin Fleckenstein"]
-    select_teacher = st.sidebar.selectbox('Select your teacher ➡️', list_teachers)
+    # list_teachers = ["Irina Zviadadze","Mian Liu","Teodor Duevski","Quirin Fleckenstein"]
+    # select_teacher = st.sidebar.selectbox('Select your teacher ➡️', list_teachers)
+    select_teacher = "Irina Zviadadze"
 
 
     ############# SELECT SECTION CODE ###############
     #list_section_code = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
-    select_code = st.sidebar.selectbox('Select your section code ➡️', list_section_code)
+    # select_code = st.sidebar.selectbox('Select your section code ➡️', list_section_code)
+    select_code = " "
 
 
     ############# SELECT STUDENT IDS OF GROUP ###############
@@ -363,8 +365,8 @@ if check_password():
 
     st.image(image_hec, width=300)
     st.title("HEC Paris - Finance Labs🧪")
-    st.subheader("Portfolio theory 📈")
-    st.markdown("Course provided by: **François Derrien**, **Irina Zviadadze**, **Mian Liu**, **Teodor Duevski**, **Quirin Fleckenstein**")
+    st.subheader("Risk and Return 📈")
+    st.markdown("Course provided by **Irina Zviadadze**")
 
     st.markdown("  ")
     st.markdown("---")
@@ -434,11 +436,12 @@ if check_password():
 
         ##################################### TITLE ####################################
         st.markdown("## 01 - One risky and one risk-free asset")
-        st.info(""" In this exercise, assume that you can invest in a risk-free asset (a T-bill) with an annual rate of return of 2%. 
+        st.info("""In this exercise, assume that you can invest in a risk-free asset (a T-bill) with an annual rate of return of 2%. 
                 In addition, you have information on annual prices and dividends of individual risky stocks. Please choose one stock and compute its expected return and the standard deviation of its return. 
                 Then, describe feasible portfolios that you can obtain by investing in the risk-free asset and chosen stock. 
                 Please represent the set of feasible portfolios in a graph that has the standard deviation of the portfolio’s return on the x-axis and the expected return on the y-axis.
         """)
+        
         st.markdown("    ")
         st.markdown("    ")
 
@@ -454,7 +457,7 @@ if check_password():
 
         ## Title of PART 1
         st.markdown('''<p style="font-size: 22px;"> Please select one stock and <b>compute its realized (holding-period) returns.</b> 
-                    Assume that holding, is one year. <br> Next, please <b>compute the expected return</b> and <b>standard deviation</b> of the holding-period returns</b></p>''',
+                    Assume that the holding period is one year. <br> Next, please <b>compute the expected return</b> and <b>standard deviation</b> of the holding-period returns</b></p>''',
                     unsafe_allow_html=True)
 
         st.markdown("   ")
@@ -864,7 +867,7 @@ if check_password():
 
         st.subheader("Question 5 📝")
         
-        st.markdown('''<p style="font-size: 22px;"> <b>Repeat the exercise of Question 3</b>, but with the possibility of selling short one of the two assets. That is, vary x, for example, from -100% to 100%.''',
+        st.markdown('''<p style="font-size: 22px;"> <b>Repeat the exercise of Question 3</b>, but with the possibility of selling short one of the two assets. That is, vary x, for example, from -100% to 200%.''',
                     unsafe_allow_html=True)
         
 
